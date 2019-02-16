@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Fundamentos de Teste de Software</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+</head>
+
+<body>
+    <h1>Fundamentos de Testes de Software</h1>
+    <h2>Sumário</h2>
+    <a href="#OqueeTeste">O que é Teste de Software</a><br>
+    <a href="#OProblema">O Problema Atual no Mercado</a><br>
+    <a href="#PerfildoMercado">Perfil do Mercado de Testes</a><br>
+    <a href="#PerfildoTestador">Perfil do Testador</a><br>
+    <a href="#VisaoPapelPerfil">Visão, Papel e Perfil do Testador</a><br>
+
+
+    <h3><a name="OqueeTeste"> O que é Teste de Software</a></h3>
+
+    <ul>
+
+        <li>É verificar se o comportamento verificado no software que está sendo testado é aquele esperado.</li>
+        <li>Verificar se uma determinada entrada reproduz uma saída correspondente.</li>
+        <li>Quando o resultado não é o esperado, estamos diante de uma falha.</li>
+        <li>Testes não verificam todas as saídas posíveis, pois as entradas são infinitas.</li>
+        <li>Testes não garantem qualidade, pois o conceito de qualidade é relativo e depende da percepção do cliente.
+            Qualidade é um conceito mais amplo.</li>
+        <li>Testes custam cerca de 20% a 30% do custo de elaboração do software</li>
+        <li>Corrigir um defeito é mais caro do que evitar que ele ocorra.</li>
+    </ul>
+
+
+    <h3><a name="OProblema"> O problema atual no mercado</a></h3>
+
+    <p> As empresas precisam construir softwares melhores, mais rápido e mais barato. Isso gera:</p>
+    <ul>
+        <li>Prazo apertado;</li>
+        <li>Clientes menos tolerantes à falhas;</li>
+        <li>Necessidade de softwares cada vez melhores;</li>
+        <li>Clientes menos tolerantes à atrasos.</li>
+    </ul>
+    <p> As empresas normalmente não estão preparadas para este cenário e acabam entregando seus sistemas com falhas,
+        pois:</p>
+    <ul>
+        <li>As tecnologias estão mais complexas;</li>
+        <li>Existem poucos testadores especialistas;</li>
+        <li>As empresas investem pouco em testes;</li>
+        <li>Os softwares acabam sendo testados pelos desenvolvedores, que testam com a visão do sistema perfeito.</li>
+    </ul>
+
+    <h3><a name="PerfildoMercado"> Perfil do mercado de testes</a></h3>
+
+    <ul>
+        <li>Poucos testadores;</li>
+        <li>Dos poucos testadores, poucos são especialistas;</li>
+        <li>Preconceito com testes;</li>
+        <li>Difícil encontrar profissionais com perfil, conhecimento e habilidade.</li>
+    </ul>
+
+
+    <h3><a name="PerfildoTestador"> Perfil do testador</a></h3>
+
+    <ul>
+        <li>Detalhista;</li>
+        <li>Paciente;</li>
+        <li>Focado;</li>
+        <li>Criterioso;</li>
+        <li>Perspicaz;</li>
+        <li>Motivado;</li>
+    </ul>
+    <p> O programador tem a visão otimista, enquanto o testador tem a visão pessimista.</p>
+    <p>O valor do testador é calculado pelo tamanho do problema que resolve versus sua raridade.</p>
+
+
+    <h3><a name="VisaoPapelPerfil"> Visão, papel e perfil do testador:</a></h3>
+    <h4>Visão</h4>
+
+    <ul>
+        <li>Crítica;</li>
+        <li>Detalhista</li>
+    </ul>
+
+
+    <h4>Perfil</h4>
+
+    <ul>
+        <li>Detalhista;</li>
+        <li>Paciente</li>
+        <li>Focado;</li>
+        <li>Criterioso;</li>
+        <li>Perspicaz;</li>
+        <li>Motivado;</li>
+        <li>Pessimista</li>
+    </ul>
+
+
+    <h4>Papel</h4>
+
+    <ul>
+        <li>Elaborar testes relevantes;</li>
+        <li>Ser referência no critério e qualidade;</li>
+        <li>Executar os testes no tempo planejado.</li>
+    </ul>
+    <p>O testador é um chato necessário. <br>
+        É melhor ter um testador chato no pé do desenvolvedor, do que o cliente reclamando no telefone com o diretor</p>
+
+    <h1>Fundamentos de teste</h1>
+
+    <h2><a href="#QuandoTestar">Quando testar</a></h2>
+    <h3><a href="#NiveisdeTeste">Níveis de teste</a></h3>
+    <ul>
+        <li><a href="#TesteBetha"> Teste Betha</a></li>
+        <li><a href="#TesteAlpha"> Teste Alpha</a></li>
+        <li><a href="#TesteAceitacao"> Teste de Aceitação</a></li>
+        <li><a href="#TesteSistema"> Teste de Sistema</a></li>
+        <li><a href="#TesteIntegracao"> Teste de Integração</a></li>
+        <li><a href="#TesteUnidade"> Teste de Unidade</a></li>
+        <li><a href="#TesteRegressao"> Teste de Regressão</a></li>
+    </ul>
+
+    <h2><a href="#ComoTestar">Como Testar</a></h2>
+    <h3><a href="#TecnicasdeTeste">Técnicas de teste</a></h3>
+    <ul>
+        <li><a href="#TesteCaixaBranca"> Teste Caixa Branca</a></li>
+        <li><a href="#TesteCaixaPreta">Teste Caixa Preta</a></li>
+    </ul>
+
+
+    <h2><a href="#OqueTestar">O que Testar</a></h2>
+    <h3><a href="#TiposdeTestes">Tipos de Testes</a></h3>
+    <ul>
+        <li><a href="#TesteFuncionalidade">Teste de funcionalidade</a></li>
+        <li><a href="#TesteDesempenho">Teste de desempenho</a></li>
+        <li><a href="#TesteUsabilidade">Teste de usabilidade</a></li>
+        <li><a href="#TesteSegurança">Teste de segurança</a></li>
+        <li><a href="#TestePortabilidade">Teste de portabilidade</a></li>
+        <li><a href="#TesteStress">Teste de Stress</a></li>
+    </ul>
+
+    <h2><a name="QuandoTestar">Quando testar</a></h2>
+    <h3> <a name="NiveisdeTeste">Níveis de Teste</a></h3>
+    <h4><a name="TesteUnidade"> Teste de Unidade</a></h4>
+    <p>É o primeiro teste a ser realizado.</p>
+    <p>Seu objetivo é testar a menor parte do sistema, como uma classe, uma determinada rotina.</p>
+    <p>Este teste normalmente é realizado pelo programador, e normalmente são automatizados.</p>
+    <p>Exemplo de ferramentas utilizadas neste tipo de teste são JUnit, PHPUnit.</p>
+    <p>Os testes de unidade devem estar sempre atualizados com o código.</p>
+    <p>Este é um teste de baixo nível, a nível de classes, métodos.</p>
+
+    <h4><a name="TesteIntegracao"> Teste de Integração</a></h4>
+    <p>O objetivo deste teste é validar a comunicação entre compomentes do sistema.</p>
+    <p>Estes testes normalmente são realizados por programadores, e focam em encontrar falhas nas interfaces de
+        integração</p>
+    <p>Normalmente, estes testes são automatizados, feitos antes da conclusão do sistema, e a nível de componente.</p>
+
+    <h4><a name="TesteSistema"> Teste de Sistema</a></h4>
+    <p>Este tipo de teste consiste em executar o software do ponto de vista do usuário final, procurando erros.</p>
+    <p>São planejados e executados pela equipe de testes, através de cenários de testes com os requisitos especificados.
+    </p>
+    <p>São realizados após a codificação do sistema, e são à nível de interface.</p>
+
+    <h4><a name="TesteAceitacao"> Teste de Aceitação</a></h4>
+    <p>São testes realizados do ponto de vista do usuário final, em nível de sistema, e pela interface do usuário.</p>
+    <p>O teste de aceitação é feito pelo usuário para validar o sistema</p>
+    <p>Este tipo de teste não procura falhas, apenas usa como homologação, e serve para o cliente aceitar ou não o
+        sistema.</p>
+    <p>Este teste é a nível de interface.</p>
+
+    <h4><a name="TesteAlpha"> Teste Alpha</a></h4>
+    <p>O objetivo deste teste é executar o sistema de forma não planejada, disponibilizando o sistema para um maior
+        número de usuários, que reportam falhas e sugestões de melhoria.</p>
+    <p>Neste teste, os usuários usam o sistema de forma natural, acompanhados da equipe de desenvolvimento.</p>
+    <p>Este teste é a nível de interface.</p>
+
+    <h4><a name="TesteBetha"> Teste Betha </a></h4>
+    <p>Este teste consiste em executar o sistema de forma natural, não planejada, e por um grande número de pessoas
+        desconhecidas.</p>
+    <p>Neste teste, o sistema apresenta uma opção de reportar erros, e é uma espécie de pré-lançamento do sistema, e ao
+        ser pré-lançado, deve informar que é uma versão Betha, para que o usuário saiba que o sistema está em fase de
+        teste.</p>
+
+    <h4><a name="TesteRegressao"> Teste de Regressão</a></h4>
+    <p>Pode ser realizado a qualquer momento, e consiste em reexecutar testes já realizados, após alterações no sistema,
+        para verificar se as alterações que foram feitas causaram impacto em outras partes do sistema.</p>
+    <p>Para este tipo de testes é interessante a implementação de testes automáticos que verificam todas as
+        funcionalidades do sistema.</p>
+    <p>Estes testes podem ser realizados em qualquer nível do sistema, e servem para reteste.</p>
+
+
+    <h2><a name="ComoTestar">Como testar</a></h2>
+    <h3><a name="TecnicasdeTeste">Técnicas de testes</a></h3>
+
+    <h4><a name="TesteCaixaBranca"> Teste Caixa Branca</a></h4>
+    <p>Também chamado de caixa aberta, neste tipo de teste, o código do sistema é visualizado por quem está testando.
+        Nele, é possível ver o interior do sistema</p>
+    <p>São exemplos deste tipo de teste os testes de unidade e teste estático.</p>
+    <ul>
+        <li>Teste de cobertura</li>
+        <li>Teste de caminhos</li>
+        <li>Teste de comandos</li>
+        <li>Teste de condições</li>
+        <li>...</li>
+    </ul>
+
+
+    <h4><a name="TesteCaixaPreta">Teste Caixa Preta</a></h4>
+    <p>No teste estático, o código do sistema não é executado.</p>
+    <p>Este teste consiste em olhar o código procurando os erros.</p>
+    <ul>
+        <li>Teste baseado em cenário</li>
+        <li>Teste baseado em casos de uso</li>
+        <li>Análise de valores limites</li>
+        <li>Teste estático</li>
+    </ul>
+
+    <h5>Itens a conferir no teste estático:</h5>
+    <ul>
+        <li>Documentação do Código;</li>
+        <li>Loop sem condição de parada;</li>
+        <li>Null pointer não tratado;</li>
+        <li>Variável não inicializada;</li>
+        <li>Se o código obedece a arquitetura pré-definida para o sistema;</li>
+        <li>Tratamento de exceções</li>
+    </ul>
+    <p>Uma ferramenta utilizada para auxiliar neste teste é a find bug.</p>
+
+    <h5>Teste Dinâmico</h5>
+    <p>São todos os outros tipos de teste que não o estático.</p>
+    <p>Os testes estático e dinâmico se complementam.</p>
+
+    <h4><a name="TesteCaixaBranca">Teste Caixa Branca</a></h4>
+    <p>Neste tipo de teste, quem está testando não visualiza o código. O teste é realizado com base nas entradas e nas
+        saídas do sistema</p>
+
+    <p>São exeplos deste tipo de teste:</p>
+    <ul>
+        <li>Teste de integração</li>
+        <li>Teste de sistema</li>
+        <li>Teste de aceitação</li>
+        <li>Teste Alpha</li>
+        <li>Teste Betha</li>
+    </ul>
+
+    <h2><a name="OqueTestar">O que testar</a></h2>
+    <h3><a name="TiposdeTestes">Tipos de testes</a></h3>
+
+    <h4><a name="TesteFuncionalidade">Teste de funcionalidade</a></h4>
+    <p>Consiste em validar se as funções do sistema estão operando de acordo com o esperado.</p>
+    <p>Todos os níveis de testes são úteis para verificar a funcionalidade.</p>
+
+    <h4><a name="TesteDesempenho">Teste de desempenho</a></h4>
+    <p>Consiste em verificar o tempo de resposta do sistema para processar uma operação.</p>
+    <p>Uma ferramenta que pode ser utilizada para implementar este tipo de teste é o JMeter.</p>
+    <p>Este teste foca em todo o fluxo do sistema - interface, componente, classe - fim a fim. </p>
+
+    <h4><a name="TesteUsabilidade">Teste de usabilidade</a></h4>
+    <p>Valida a experiência do usuário com o sistema, tais como cores, layout, facilidade de uso.</p>
+    <p>O foco deste tipo de teste não é encontrar defeitos, mas sim no prazer que o usuário sente em manipular o
+        sistema.</p>
+
+    <h4><a name="TesteSegurança">Teste de segurança</a></h4>
+    <p>Validam a proteção do sistema contra invasões e acessos não autorizados, e levam em consideração aspectos como
+        criptografia e controle de acesso.</p>
+    <p>Consiste em o testador "hackear" o sistema, procurando vulnerabilidades, antes que um hacker mal intencionado o
+        faça.</p>
+
+    <h4><a name="TestePortabilidade">Teste de portabilidade</a></h4>
+    <p>Validam o funcionamento do sistema em diversas plataformas, nas quais ele se propõe a funcionar.</p>
+    <p>Podem ser verificados neste tipo de teste a diversidade de browsers.</p>
+
+    <h4><a name="TesteStress">Teste de stress</a></h4>
+    <p>Este tipo de teste valida o sistema em situações extremas, como por exemplo, testar o sistema com milhares de
+        acessos, ou milhares de usuários simultaneamente.</p>
+    <p>Uma ferramenta que pode ser utilizada neste tipo de teste é o JMeter.</p>
+
+
+
+</body>
+
+</html>
